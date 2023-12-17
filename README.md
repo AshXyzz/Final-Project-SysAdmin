@@ -4,8 +4,6 @@ kita bisa mengunduh nya disini
 ```
 https://www.centos.org/download/
 ```
-
-
 ## Konfigurasi SSH
 
 ### Instal OpenSSH

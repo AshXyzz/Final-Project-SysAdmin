@@ -1,9 +1,8 @@
 ## Menginstall System Operasi CentOS 7
 kita bisa mengunduh nya disini
+[Download CentOS](https://www.centos.org/download/)
 
-```
-https://www.centos.org/download/
-```
+
 ## Konfigurasi SSH
 
 ### Instal OpenSSH
@@ -58,4 +57,34 @@ sudo firewall-cmd --reload
 Periksa status Apache untuk memastikan bahwa layanan berjalan tanpa masalah
 ```
 sudo systemctl status httpd
+```
+<img src="\assets\status httpd.png" alt="status httpd">
+
+### Tes Instalasi
+Buka web browser dan akses alamat IP server atau domain (jika sudah dikonfigurasi) untuk memastikan bahwa halaman selamat datang Apache ditampilkan
+### Tambahkan Halaman HTML
+Tambahkan halaman HTML ke direktori root situs web. Misalnya
+```
+sudo mkdir /var/www/namasitus
+sudo nano /var/www/namasitus/index.html
+```
+Tambahkan konten HTML ke file index.html
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh</title>
+</head>
+<body>
+    <h1>Welcome to MySite</h1>
+    <p>This is the default page for your website.</p>
+</body>
+</html>
+```
+Simpan dan keluar
+### Restart Apache
+```
+sudo systemctl restart httpd
 ```

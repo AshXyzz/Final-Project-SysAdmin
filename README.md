@@ -25,4 +25,4 @@ sudo systemctl status sshd
 ```
 sudo systemctl status sshd
 ```
-<img src="\assets\15.png" alt="15.png">
+<img src="\assets\status ssh.png" alt="status ssh">

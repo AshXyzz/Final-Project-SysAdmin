@@ -1,3 +1,8 @@
+### SSH
+### Web Server
+### Apache
+
+
 ## Menginstall System Operasi CentOS 7
 kita bisa mengunduh nya disini
 [Download CentOS](https://www.centos.org/download/)
